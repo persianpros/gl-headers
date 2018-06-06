@@ -1,0 +1,2 @@
+option('glext', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto', description : 'Install and use the GL/glext.h header. yes, no or auto (if not detected to exist)')
+option('wglext', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto', description : 'Install and use the GL/wglext.h header. yes, no or auto (if not detected to exist)')
