@@ -36,3 +36,5 @@ if get_option('glext') != 'no'
 endif
 
 compatibility_includes = [glext_include, wglext_include]
+
+gl_headers_dummy_dep = declare_dependency()
