@@ -1,11 +1,12 @@
 project('gl-headers', 'c',
   version : '2019.1.0',
-  meson_version : '>= 0.42.0',
+  meson_version : '>= 0.46.0',
   default_options : [ 'warning_level=1',
                       'buildtype=debugoptimized' ])
 
 cc = meson.get_compiler('c')
-py3 = import('python3').find_python()
+py3 = import('python').find_installation()
+
 # path that doesn't include any headers aka /dev/null
 abyss = include_directories('abyss')
 
