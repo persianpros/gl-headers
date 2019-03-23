@@ -39,3 +39,10 @@ endif
 compatibility_includes = [glext_include, wglext_include]
 
 gl_headers_dummy_dep = declare_dependency()
+
+# create empty subdirs in the build directory to avoid g-i and compiler
+# warnings when a build dir that doesn't exist is included.
+subdir('abyss')
+subdir('khrplatform')
+subdir('wglext')
+subdir('glext')
